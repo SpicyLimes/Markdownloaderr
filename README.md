@@ -4,8 +4,6 @@
 
 **Markdownloaderr** is a high-performance web tool designed for developers and AI enthusiasts. It strips away the clutter of modern websites—ads, navigation, and scripts—leaving you with clean, structured Markdown perfectly formatted for Large Language Models (LLMs) like Claude, GPT-4, and Gemini.
 
-🚀 **[Live Demo](https://spicylimes.github.io/Markdownloaderr/)**
-
 ---
 
 ## ✨ Features
@@ -49,4 +47,4 @@ This repository is configured with **GitHub Actions**. Any push to the `main` br
 
 ---
 
-© 2026 **SpicyLimes.io** | Created by **Google Antigravity**
+© 2026 **SpicyLimes.io** | Designed by *SpicyLimes* | Created by **Google Antigravity**
