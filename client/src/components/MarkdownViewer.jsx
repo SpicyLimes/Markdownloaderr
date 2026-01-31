@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import { Copy, Check, FileText } from 'lucide-react';
+import { Copy, Check, FileText, Download } from 'lucide-react';
 
 export default function MarkdownViewer({ markdown, title, metadata }) {
     const [copied, setCopied] = useState(false);
@@ -12,6 +11,20 @@ export default function MarkdownViewer({ markdown, title, metadata }) {
         } catch (err) {
             console.error('Failed to copy text: ', err);
         }
+    };
+
+    const handleDownload = () => {
+        const blob = new Blob([markdown], { type: 'text/markdown' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        const filename = title ? `${title.replace(/[^a-z0-9]/gi, '_').toLowerCase()}.md` : 'article.md';
+
+        a.href = url;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
     };
 
     if (!markdown) return null;
@@ -28,8 +41,8 @@ export default function MarkdownViewer({ markdown, title, metadata }) {
                 <button
                     onClick={handleCopy}
                     className={`btn flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${copied
-                            ? 'bg-green-500/20 text-green-400 border border-green-500/30'
-                            : 'bg-[rgba(255,255,255,0.05)] hover:bg-[rgba(255,255,255,0.1)] text-white border border-transparent'
+                        ? 'bg-green-500/20 text-green-400 border border-green-500/30'
+                        : 'bg-[rgba(255,255,255,0.05)] hover:bg-[rgba(255,255,255,0.1)] text-white border border-transparent'
                         }`}
                 >
                     {copied ? (
