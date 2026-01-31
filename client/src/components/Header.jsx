@@ -1,10 +1,14 @@
-import { Zap } from 'lucide-react';
+import logo from '../assets/logo.png';
 
 export default function Header() {
     return (
         <div className="text-center mb-12">
             <div className="flex items-center justify-center gap-3 mb-4">
-                <Zap className="w-10 h-10 text-[#a3e635] drop-shadow-[0_0_15px_rgba(163,230,53,0.5)]" />
+                <img
+                    src={logo}
+                    alt="SpicyLimes Logo"
+                    className="w-12 h-12 object-contain drop-shadow-[0_0_15px_rgba(163,230,53,0.5)]"
+                />
                 <h1 className="text-5xl font-bold tracking-tight text-white">
                     Mark<span className="text-[#a3e635]">downloaderr</span>
                 </h1>
