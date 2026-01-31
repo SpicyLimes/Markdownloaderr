@@ -1,0 +1,25 @@
+# System Files
+.DS_Store
+Thumbs.db
+
+# Logs and temp files
+*.log
+logs/
+temp/
+
+# Node environment
+node_modules/
+dist/
+
+# IDE files
+.vscode/
+.idea/
+.agent/
+.gemini/
+
+# Artifacts/Internal logs
+brain/
+walkthrough.md
+implementation_plan.md
+task.md
+*.txt
