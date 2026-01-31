@@ -98,7 +98,7 @@ function App() {
 
         <footer className="mt-20 text-center text-gray-500 text-sm font-light">
           <p>© 2026 SpicyLimes.io | All Rights Reserved | <a href="https://github.com/SpicyLimes/Markdownloaderr" target="_blank" rel="noopener noreferrer" className="text-[var(--text-secondary)] hover:text-[var(--accent-color)] transition-colors">GitHub</a></p>
-          <p className="mt-2">Designed by <span className="text-gray-400 italic">SpicyLimes</span> with <strong>Google Antigravity</strong></p>
+          <p className="mt-2">Designed by <span className="text-gray-400 italic">SpicyLimes</span> | Created by <strong>Google Antigravity</strong></p>
         </footer>
       </div>
     </div>
