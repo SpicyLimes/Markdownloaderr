@@ -44,4 +44,4 @@
 
 ---
 
-© 2026 **SpicyLimes.io** | Designed by *SpicyLimes* | Created by **Google Antigravity**
+© 2026 **SpicyLimes.io** | Designed by *SpicyLimes* | Created with **Google Antigravity**
