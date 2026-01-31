@@ -42,9 +42,6 @@
 3. Install dependencies: `npm install`.
 4. Start dev server: `npm run dev`.
 
-### Deployment
-This repository is configured with **GitHub Actions**. Any push to the `main` branch will automatically trigger a build and deploy to the `gh-pages` branch.
-
 ---
 
 © 2026 **SpicyLimes.io** | Designed by *SpicyLimes* | Created by **Google Antigravity**
