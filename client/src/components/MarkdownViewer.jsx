@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Copy, Check, FileText, Download } from 'lucide-react';
 
 export default function MarkdownViewer({ markdown, title, metadata }) {
@@ -38,25 +39,34 @@ export default function MarkdownViewer({ markdown, title, metadata }) {
                         {title || 'Converted Article'}
                     </span>
                 </div>
-                <button
-                    onClick={handleCopy}
-                    className={`btn flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${copied
-                        ? 'bg-green-500/20 text-green-400 border border-green-500/30'
-                        : 'bg-[rgba(255,255,255,0.05)] hover:bg-[rgba(255,255,255,0.1)] text-white border border-transparent'
-                        }`}
-                >
-                    {copied ? (
-                        <>
-                            <Check className="w-4 h-4" />
-                            <span>Copied!</span>
-                        </>
-                    ) : (
-                        <>
-                            <Copy className="w-4 h-4" />
-                            <span>Copy Markdown</span>
-                        </>
-                    )}
-                </button>
+                <div className="flex items-center gap-2">
+                    <button
+                        onClick={handleDownload}
+                        className="btn flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 bg-[rgba(163,230,53,0.1)] hover:bg-[rgba(163,230,53,0.2)] text-[var(--accent-color)] border border-[rgba(163,230,53,0.2)]"
+                    >
+                        <Download className="w-4 h-4" />
+                        <span>Download .md</span>
+                    </button>
+                    <button
+                        onClick={handleCopy}
+                        className={`btn flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${copied
+                            ? 'bg-green-500/20 text-green-400 border border-green-500/30'
+                            : 'bg-[rgba(255,255,255,0.05)] hover:bg-[rgba(255,255,255,0.1)] text-white border border-transparent'
+                            }`}
+                    >
+                        {copied ? (
+                            <>
+                                <Check className="w-4 h-4" />
+                                <span>Copied!</span>
+                            </>
+                        ) : (
+                            <>
+                                <Copy className="w-4 h-4" />
+                                <span>Copy Markdown</span>
+                            </>
+                        )}
+                    </button>
+                </div>
             </div>
             <div className="p-0 relative">
                 <textarea
