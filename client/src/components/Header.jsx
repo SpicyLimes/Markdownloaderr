@@ -7,10 +7,10 @@ export default function Header() {
                 <img
                     src={logo}
                     alt="SpicyLimes Logo"
-                    className="w-12 h-12 object-contain drop-shadow-[0_0_15px_rgba(163,230,53,0.5)]"
+                    className="w-24 h-24 object-contain drop-shadow-[0_0_20px_rgba(163,230,53,0.6)]"
                 />
                 <h1 className="text-5xl font-bold tracking-tight text-white">
-                    Mark<span className="text-[#a3e635]">downloaderr</span>
+                    Mark<span className="text-[#a3e635]">downloade</span><span className="text-[#ff5200] drop-shadow-[0_0_10px_rgba(255,82,0,0.8)]">rr</span>
                 </h1>
             </div>
             <p className="text-xl text-[var(--text-secondary)] font-light max-w-2xl mx-auto">
