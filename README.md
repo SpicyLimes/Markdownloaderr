@@ -18,7 +18,7 @@
 
 ## 🛠️ How to Use
 
-1.  **Visit the App**: Open the [live site](https://spicylimes.github.io/Markdownloaderr/).
+1.  **Visit the App**: Open the [live site](https://markdownloaderr.com/).
 2.  **Enter a URL**: Paste the link to an article or blog post you want to convert.
 3.  **Click Convert**: The app will fetch and parse the content.
 4.  **Copy or Download**: Use the "Copy" button for quick pasting or "Download .md" to save a file.
